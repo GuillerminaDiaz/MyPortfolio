@@ -12,3 +12,37 @@
     width: 8%;
     height: 8%;
 }
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width: 65px;
+    height: 30px;
+    background-color: #77B1BB;
+    border: solid 0.5px #aed5e6;
+    border-radius: 20px;
+}
+
+.switch::after{
+    content: 'ES';
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    color: #77B1BB;
+    background-color: #EFEFEF;
+    left: .5px;
+    top: 1px;
+}
+
+input[type='checkbox']:checked + .switch::after{
+    transform: translateX(35px);
+    background-color: #487a83;
+    content: 'EN';
+}
+
+input[type='checkbox']:checked + .switch{
+    
+    right: .5px;
+
+}

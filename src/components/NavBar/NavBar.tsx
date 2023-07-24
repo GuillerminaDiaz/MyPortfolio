@@ -10,7 +10,11 @@ const NavBar = () => {
       <NavLink to="/about">About</NavLink>
       <NavLink to="/skills">Skills</NavLink>
       <NavLink to="/projects">Projects</NavLink>
-      <NavLink to="/contsct">Contact</NavLink>
+      <NavLink to="/contact">Contact</NavLink>
+      <div>
+        <input type="checkbox" name="toggleLenguage" />
+        <label htmlFor="toggleLenguage" className={style.switch}></label>
+      </div>
     </div>
   );
 };
